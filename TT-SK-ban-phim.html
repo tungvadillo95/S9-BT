@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TT-Sự kiện bàn phím</title>
+</head>
+<body onload="chay()">
+    <img src="https://james.codegym.vn/pluginfile.php/27447/mod_assign/intro/1.png" 
+    style="position:absolute;left:0; top:0;" height="100" width="80" id="nobita"/>
+    <script>
+    function len() {
+    let anh = document.getElementById("nobita");
+    anh.style.top = parseInt(anh.style.top) - 5 + 'px';
+}
+function xuong() {
+    var anh = document.getElementById("nobita");
+    anh.style.top = parseInt(anh.style.top) + 5 + 'px';
+}
+function trai() {
+    var anh = document.getElementById("nobita");
+    anh.style.left = parseInt(anh.style.left) - 5 + 'px';
+}
+function phai() {
+    var anh = document.getElementById("nobita");
+    anh.style.left = parseInt(anh.style.left) + 5 + 'px';
+
+}
+function dichuyen(evt) {
+    switch (evt.keyCode) {
+        case 37:
+            trai();
+            break;
+        case 39:
+            phai();
+            break;
+        case 38:
+            len();
+            break;
+        case 40:
+            xuong();
+            break;
+    }
+}
+function chay() {
+    window.addEventListener('keydown', dichuyen);
+}
+    </script>
+</body>
+</html>
