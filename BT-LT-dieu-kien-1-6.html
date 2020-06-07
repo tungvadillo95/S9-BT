@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính hoa hồng</title>
+</head>
+
+<body>
+    <script>
+        var doanhso = +prompt('Nhập doanh số bán hàng(Triệu VNĐ): ');
+        var tile;
+        var hoahong;
+        if (doanhso < 0) alert(' Không hợp lệ !')
+        else if (doanhso >= 100) tile = 0.25
+        else if (doanhso > 50) tile = 0.2
+        else if (doanhso > 25) tile = 0.15
+        else if (doanhso > 0) tile = 0.1
+        else tile = 0;
+       alert('Hoa hồng là: '+(doanhso*tile)+' triệu VNĐ');
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra có phải hình tam giác</title>
+</head>
+<body>
+    <script>
+        var a=+prompt('Nhập giá trị cạnh a(cm): ')
+        var b=+prompt('Nhập giá trị cạnh b(cm): ')
+        var c=+prompt('Nhập giá trị cạnh c(cm): ')
+        if ((a>0)&&(b>0)&&(c>0)){
+        if ((a+b>c)&&(b+c>a)&&(a+c>b)) alert('Là hình tam giác')
+        else alert('Không phải hình tam giác')
+        }
+        else alert('Không hợp lệ!');
+    </script>
+</body>
+</html>

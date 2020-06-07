@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính cước điện thoại</title>
+</head>
+<body>
+<script>
+    var thoigiangoi=+prompt('Nhập thời gian cuộc gọi (tính bằng giây): ');
+    var giacuoc;
+    if (thoigiangoi<0) alert('Không hợp lệ!') 
+    else if (thoigiangoi>600) giacuoc=40
+    else if (thoigiangoi>300) giacuoc=50
+    else if (thoigiangoi>120) giacuoc=60
+    else if (thoigiangoi>60) giacuoc=70
+    else if (thoigiangoi>0) giacuoc=80
+    else giacuoc=0;
+    alert('Tiền cước điện thoại là: '+(thoigiangoi*giacuoc)+' VNĐ');
+</script>
+</body>
+</html>

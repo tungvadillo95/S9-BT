@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính lãi ngân hàng</title>
+</head>
+
+<body>
+    <script>
+        var tienvay = +prompt('Nhập số tiền vay(VNĐ): ')
+        var laisuat = +prompt('Nhập lãi suất ngân hàng (%): ')
+        var sothang = +prompt('Nhập số tháng vay: ')
+        var tienlai = (tienvay * laisuat / 1200) * sothang;
+        alert('Số tiền lãi là: ' + tienlai + ' VNĐ')
+    </script>
+</body>
+</html>

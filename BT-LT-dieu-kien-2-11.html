@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính thuế thu nhập cá nhân</title>
+</head>
+
+<body>
+    <script>
+        let thunhap = +prompt('Nhập thu nhập cá nhân(TriệuVNĐ): ');
+        let thuesuat;
+        if (thunhap > 0) {
+            if (thunhap > 80) { thuesuat = 0.35 }
+            else if (thunhap > 52) { thuesuat = 0.3 }
+            else if (thunhap > 32) { thuesuat = 0.25 }
+            else if (thunhap > 18) { thuesuat = 0.2 }
+            else if (thunhap > 10) { thuesuat = 0.15 }
+            else if (thunhap > 5) { thuesuat = 0.1 }
+            else { thuesuat = 0.05 };
+            alert('Thuế thu nhập cá nhân là: ' + (thunhap * thuesuat) + ' Triệu VNĐ')
+        }
+        else alert('Không hợp lệ!');    
+    </script>
+</body>
+
+</html>

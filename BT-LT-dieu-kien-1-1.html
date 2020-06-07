@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chia hết hay không</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt('Nhập giá trị a : ');
+        let b = +prompt('Nhập giá trị b: ');
+        if (a <= 0 || b < 0) {
+            alert('Không hợp lệ');
+        }
+        else if (a % b == 0) {
+            alert(a + ' chia hết cho ' + b);
+        }
+        else alert(a + ' không chia hết cho ' + b);
+        /*switch ((a % b == 0) ? 0 : 1) {
+            case 0:
+                alert(a + ' chia hết cho ' + b);
+                break;
+            case 1:
+                alert(a + ' không chia hết cho ' + b)
+                break;
+            default:
+                alert('Không hợp lệ')
+                break;
+        }*/
+    </script>
+</body>
+
+</html>

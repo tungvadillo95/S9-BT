@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tiền điện</title>
+</head>
+
+<body>
+    <script>
+        var sotieuthu = +prompt('Nhập chữ số điện tiêu thụ(kWh): ')
+        var giadien;
+        if (sotieuthu>0){
+        if (sotieuthu > 400) giadien = 2701
+        else if (sotieuthu > 300) giadien = 2615
+        else if (sotieuthu > 200) giadien = 2340
+        else if (sotieuthu > 100) giadien = 1858
+        else if (sotieuthu > 50) giadien = 1600
+        else (sotieuthu > 0) giadien = 1549
+        else alert('Không hợp lệ!');
+        alert('Giá điện là: ' + giadien + ' VNĐ');
+        }
+        else alert('Không hợp lệ!');
+    </script>
+</body>
+
+</html>

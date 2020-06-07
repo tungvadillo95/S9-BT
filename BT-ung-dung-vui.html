@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng vui</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="2">
+                <h1>Do you love me?</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="Yes" onclick="yes()" />
+            </td>
+            <td>
+                <input style="position: relative;" id='no' type="button" value="No" onmouseover="nolove()" />
+            </td>
+        </tr>
+    </table>
+
+
+    <script>
+        function yes() {
+            alert('Love u too <3')
+        }
+        function nolove() {
+            let a = document.getElementById('no')
+            let len = Math.random() * 1000 + 'px';
+            let xuong = Math.random() * 500 + 'px';
+            a.style.left = len
+            a.style.top = xuong
+        }
+    </script>
+</body>
+
+</html>
