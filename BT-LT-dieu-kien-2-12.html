@@ -9,11 +9,19 @@
 
 <body>
     <script>
-        var tienvay = +prompt('Nhập số tiền vay(VNĐ): ')
-        var laisuat = +prompt('Nhập lãi suất ngân hàng (%): ')
-        var sothang = +prompt('Nhập số tháng vay: ')
-        var tienlai = (tienvay * laisuat / 1200) * sothang;
-        alert('Số tiền lãi là: ' + tienlai + ' VNĐ')
+        var tienVay = +prompt('Nhập số tiền vay(Triệu VNĐ): ');
+        var soThang = +prompt('Nhập số tháng vay: ');
+        var laiSuat = +prompt('Nhập lãi suất ngân hàng mỗi tháng(%): ');
+        var a = tienVay;
+        var tienLai = 0;
+        var tong = 0;
+        for (i = 1; i <= soThang; i++) {
+            tienVay += tienLai;
+            tienLai = (laiSuat * tienVay / 100);
+            tong = tienVay += tienLai;
+        }
+        alert('Tổng tiền lãi sau ' + soThang + ' tháng là :' + (tong - a) + 'Triệu VNĐ');
     </script>
 </body>
+
 </html>
