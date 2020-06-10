@@ -14,13 +14,11 @@
         var laiSuat = +prompt('Nhập lãi suất ngân hàng mỗi tháng(%): ');
         var a = tienVay;
         var tienLai = 0;
-        var tong = 0;
         for (i = 1; i <= soThang; i++) {
-            tienVay += tienLai;
             tienLai = (laiSuat * tienVay / 100);
-            tong = tienVay += tienLai;
+            tienVay += tienLai;
         }
-        alert('Tổng tiền lãi sau ' + soThang + ' tháng là :' + (tong - a) + 'Triệu VNĐ');
+        alert('Tổng tiền lãi sau ' + soThang + ' tháng là :' + (tienVay - a) + 'Triệu VNĐ');
     </script>
 </body>
 
